@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kitaplik.mbo.com.sosyal_kitaplik.KayitOlActivity"
+    android:background="@drawable/bookbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#bbffffff">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="KİTABIM"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="26dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            android:maxLength="24"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="110dp"
+            android:layout_marginHorizontal="15dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="İsim"
+            android:inputType="textPersonName"
+            android:maxLength="24"
+            android:layout_marginHorizontal="15dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="178dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mail"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="248dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Şifre"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="306dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editRepass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Şifre Tekrarı"
+            android:layout_marginHorizontal="15dp"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="370dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Kaydı Tamamla"
+            android:layout_margin="20dp"
+            android:background="@color/whiteblue"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

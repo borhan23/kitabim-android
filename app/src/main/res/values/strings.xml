@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Kitabım</string>
+    <string name="title_book">Kitaplar</string>
+    <string name="title_flow">Akış</string>
+    <string name="title_trend">Trendler</string>
+    <string name="title_activity_main_flow">Akış Sayfası</string>
+
+    <string name="title_classic">Klasikler</string>
+    <string name="title_new">Yeni Eklenenler</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

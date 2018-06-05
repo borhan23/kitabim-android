@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookDetailActivity">
+
+    <ImageButton
+        android:id="@+id/btnscrolltop"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_arrow_drop_up_black_24dp"
+        android:background="@color/whiteblue"
+        />
+
+<ScrollView
+    android:id="@+id/scrolldetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/grid_book_image"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/grid_book_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Kitap Adı"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtbook_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Yazar"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtbook_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Sayfa Sayısı" />
+
+                <TextView
+                    android:id="@+id/txtdateofissue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Basım Tarihi" />
+
+                <TextView
+                    android:id="@+id/txtlikecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Beğeni sayısı:" />
+
+                <TextView
+                    android:id="@+id/txtcitationscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Alıntı sayısı:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_marginRight="2dp"/>
+
+                    <TextView
+                        android:id="@+id/txtbookdetailrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnlike"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Beğen"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnrate"
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:text="Oy ver"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtrated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Detay" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:elevation="3dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="5dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtusercomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yorum yazın..."
+            android:textSize="14dp"
+            android:maxLength="480" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncomment"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="GÖNDER"
+            android:textSize="12dp"/>
+
+        <CheckBox
+            android:id="@+id/cbspoiler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spoiler"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YORUMLAR"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bookcommentrview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

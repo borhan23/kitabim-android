@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/dUserImage"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/dName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İsim"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/dUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Adı"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/dBookCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Okunan Kitap Sayısı :"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/dPaperCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Okuduğu Sayfa Sayısı :"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/dCitatCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alıntı Sayısı :"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şuan Okunan Kitaplar"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <ListView
+            android:id="@+id/listreading"
+            android:layout_width="wrap_content"
+            android:layout_height="123dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

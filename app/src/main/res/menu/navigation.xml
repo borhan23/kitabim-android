@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_book"
+        android:icon="@drawable/book"
+        android:title="@string/title_book" />
+
+    <item
+        android:id="@+id/navigation_flow"
+        android:icon="@drawable/newspaper"
+        android:title="@string/title_flow" />
+
+    <item
+        android:id="@+id/navigation_trend"
+        android:icon="@drawable/star"
+        android:title="@string/title_trend" />
+
+</menu>

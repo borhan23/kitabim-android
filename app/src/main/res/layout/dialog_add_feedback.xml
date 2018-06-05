@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talep Başlığı: "
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/editfeedbaslik"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:maxLength="30"
+            android:enabled="false" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:maxLength="480"
+        android:layout_gravity="center"
+        android:hint="Talebinizi yazın..."/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnsendfeedback"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Gönder"
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

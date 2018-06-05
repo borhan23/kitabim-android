@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="@color/menu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/layout_citation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtplandate"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tarih: "
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"/>
+
+
+                <ImageButton
+                    android:id="@+id/btndelete_plan"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    app:srcCompat="@drawable/ic_close_black_24dp" />
+            </android.support.design.widget.CoordinatorLayout>
+
+            <TextView
+                android:id="@+id/txtplantime"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Saat: "
+                android:layout_margin="5dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtplanbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Kitap:  "
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtplanpagelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Okunacak Sayfa Sayısı: "
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

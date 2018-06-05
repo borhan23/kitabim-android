@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_classic_book"
+        android:icon="@drawable/like"
+        android:title="@string/title_classic"
+        />
+
+    <item
+        android:id="@+id/navigation_new_book"
+        android:icon="@drawable/newspaper"
+        android:title="@string/title_new" />
+
+</menu>
