@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:881304615892:android:83c2d90ae168c2ea",
+        "android_client_info": {
+          "package_name": "com.kitapadmin.mbo.kitapadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881304615892-72kn8uflh8ted7bj1r1n1sulau9mpn8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kitapadmin.mbo.kitapadmin",
+            "certificate_hash": "209a1994cbde86f42464ed783f7e4de58c1ecaa9"
+          }
+        },
+        {
+          "client_id": "881304615892-5nv0kfj0ljphev500sci47i3g8ds9aqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHkMOfj7KbTBI6jXasCXvnlOafHo92hNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881304615892-5nv0kfj0ljphev500sci47i3g8ds9aqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:881304615892:android:877d2d1cf62d6b14",
         "android_client_info": {
           "package_name": "kitaplik.mbo.com.sosyal_kitaplik"
@@ -25,15 +62,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881304615892-5nv0kfj0ljphev500sci47i3g8ds9aqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
